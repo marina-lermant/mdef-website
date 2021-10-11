@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-      
+
     - name: Setup Python
       uses: actions/setup-python@v1
       with:
@@ -34,3 +34,5 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./site
+        - name: webfactory/ssh-agent
+  uses: webfactory/ssh-agent@v0.5.3
