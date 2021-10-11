@@ -28,11 +28,12 @@ jobs:
         python --version
         mkdocs --version
         mkdocs build
+        
+- name: webfactory/ssh-agent
+  uses: webfactory/ssh-agent@v0.5.3
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./site
-        - name: webfactory/ssh-agent
-  uses: webfactory/ssh-agent@v0.5.3
