@@ -408,7 +408,7 @@ a.icon {
 #header .header-thumb {
   background: #ffffff;
   border: 10px solid #f9f9f9;
-  padding: 62px 20px 62px 20px;
+  /* padding: 62px 20px 62px 20px; */
 }
 
 .header-one .header-thumb,
@@ -443,9 +443,17 @@ a.icon {
   background: url('../images/header-four-bg.jpg') no-repeat;
 }
 .header-five {
-  background: url('../images/header-five-bg.jpg') no-repeat;
+  background: url('../images/park.jpg') no-repeat;
 }
-
+.header-six {
+  background: url('../images/view.jpg') no-repeat;
+}
+.header-seven {
+  background: url('../images/bio4.jpg') no-repeat;
+}
+.header-eight {
+  background: url('../images/dirt.jpg') no-repeat;
+}
 /* Portfolio section styles
 /* ========================================== */
 #portfolio {
