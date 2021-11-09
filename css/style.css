@@ -58,7 +58,7 @@ h5 {
 }
 
 p {
-  color: #777;
+  color: #414141;
   font-size: 16px;
   line-height: 28px;
   word-spacing: 1px;
@@ -453,6 +453,9 @@ a.icon {
 }
 .header-eight {
   background: url('../images/dirt.jpg') no-repeat;
+}
+.header-nine {
+  background: url('../images/feet1.jpg') no-repeat;
 }
 /* Portfolio section styles
 /* ========================================== */
