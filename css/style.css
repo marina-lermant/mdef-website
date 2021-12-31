@@ -440,7 +440,7 @@ a.icon {
   background: url('../images/seaweedp.png') no-repeat;
 }
 .header-four {
-  background: url('../images/header-four-bg.jpg') no-repeat;
+  background: url('../images/seaweedp.png') no-repeat;
 }
 .header-five {
   background: url('../images/park.jpg') no-repeat;
@@ -471,6 +471,9 @@ a.icon {
 }
 .header-fourteen {
 	background: url('../images/ws1.JPG') no-repeat;
+}
+.header-fifteen {
+	background: url('../images/moral.PNG') no-repeat;
 /* Portfolio section styles
 /* ========================================== */
 #portfolio {
