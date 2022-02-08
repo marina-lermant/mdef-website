@@ -68,6 +68,8 @@ p {
 }
 
 a {
+	color: #13843226;
+	font-size: 20px;
   outline: none;
   text-decoration: none;
 }
@@ -477,6 +479,12 @@ a.icon {
 }
 .header-sixteen {
 	background: url('../images/10bill2.jpg') no-repeat;
+}
+.header-seventeen {
+	background: url('../images/10bill2.jpg') no-repeat;
+}
+.header-eighteen {
+	background: url('../images/rm4.jpg') no-repeat;
 /* Portfolio section styles
 /* ========================================== */
 #portfolio {
