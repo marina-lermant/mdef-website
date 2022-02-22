@@ -65,6 +65,7 @@ p {
   letter-spacing: 1px;
 	font-weight: normal;
 
+
 }
 
 a {
@@ -485,6 +486,12 @@ a.icon {
 }
 .header-eighteen {
 	background: url('../images/rm4.jpg') no-repeat;
+}
+.header-nineteen {
+	background: url('../images/comm1.jpg') no-repeat;
+}
+.header-twenty {
+	background: url('../images/prop8.jpg') no-repeat;
 /* Portfolio section styles
 /* ========================================== */
 #portfolio {
