@@ -482,7 +482,7 @@ a.icon {
 	background: url('../images/10bill2.jpg') no-repeat;
 }
 .header-seventeen {
-	background: url('../images/10bill2.jpg') no-repeat;
+	background: url('../images/tn2.jpg') no-repeat;
 }
 .header-eighteen {
 	background: url('../images/rm4.JPG') no-repeat;
@@ -495,6 +495,15 @@ a.icon {
 }
 .header-twentyone {
 	background: url('../images/futuretalks.jpg') no-repeat;
+}
+	.header-twentytwo {
+		background: url('../images/tn.JPG') no-repeat;
+	}
+		.header-twentythree {
+			background: url('../images/ci.JPG') no-repeat;
+		}
+			.header-twentyfour {
+				background: url('../images/dd24.jpeg') no-repeat;
 /* Portfolio section styles
 /* ========================================== */
 #portfolio {
