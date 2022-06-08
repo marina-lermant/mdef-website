@@ -197,21 +197,12 @@ Paula Del Rio and I soldered our board together in class (we forgot to take a pi
 <p>Assignment:
 3D print an object you have modeled (not something you have downloaded) that could only be made with Additive manufacturing techniques.</p>
 
-<p>This project was very exciting because I had the chance to continue part of a project from the first intervention which was bioremediating with oyster and mussel shells. Because we were finished with that intervention and had waste shells, we wanted to try 3D printing using them as a material. To be able to print with a material like this, we had to use the paste printer. These machines work in a similar manner to the other 3D printers, but need the material to be inserted and have the particular consistency that is not too thin or thick. In order to make the paste, we followed the process below from raw oyster shells to final printable paste material. The original recipe from materiom we based our off of was to use 1 powder: 4 water (98%) and alginate (2%). While testing with this, we found we needed to add much more water to form a malleable paste and ended up with the final recipe in the diagram.</p>
+<p>In order to get the pieces we needed to fit to specifics we wanted for the photobioreactor, we decided to model pieces to print for the pumps and sensors. We needed a 3D printed piece to hold the peristaltic pump so that it could be held in place upright, and then screwed to the base of the photobioreactor. The holder has a neck that fits snugly around the pump’s body. I measured it, modeled it in rhino and then printed it on the ender printer with white PLA filament.</p>
 
-<img src="images/3d2.jpg" class="img-responsive post-image" style="height: 550px; object-fit: contain;"alt="Blog">
-<br>
+<img src="images/pumpmoldrhino.jpg" class="img-responsive post-image" style="height: 500px; object-fit: contain;"alt="Blog">
+<img src="images/pumpholder.jpg" class="img-responsive post-image" style="height: 600px; object-fit: contain;"alt="Blog">
 
-<p>In order to test the paste consistency, we used a smaller tube with pressure. However, in the end the nozzle was too small (much smaller than the nozzle on the 3D printer) so we were unable to push the material through, and the result was us adding a bit too much water into the mixture. At first, we tried to use the Ender printer which offered more accuracy but with higher risk. Since it was our first time testing with this type of printer, we decided to test with a simple shape. We used a simple cylinder and sliced it in rhino using grasshopper files from FabLab with the pufferfish plugin to turn it into slices. The parameters we used were 0 on the Z axis, 3 for the width of the nozzle opening, 2.5 slicing distance, and 2.5 on infill. While using this machine, we encountered a lot of problems with the pressure and material coming out the sides, in which we ended up breaking the 3D printed part above the nozzle!</p>
 
-<img src="images/3d1.JPG" class="img-responsive post-image" style="height: 500px; object-fit: contain;"alt="Blog">
-<center> <iframe src="https://giphy.com/embed/UZBSPEJI0xPoFgaLkO" width="550" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/UZBSPEJI0xPoFgaLkO"></a></p> </center>
-
-<p>We then decided to switch over to the Kossel printer. We downloaded Kossel for grasshopper and Repetier to make the process easier with interacting with the machine. This machine was easy to use and we transferred our file with the new code. The only tricky part was making sure the nozzle was at the right height just above the plate of the printer at a Z value of -19. With this test print, we tried to allow the material to build up into a higher vase. Once we hit a certain height threshold, it started to become very inconsistent and after attempting to fix it a bit with our hands it collapsed. The final products were still really interesting and it was a process in which we learned a lot.</p>
-<div class="col-lg-6"> <img src="images/3d5.JPG" class="img-responsive post-image" alt="Blog"> </div>
-<div class="col-lg-6"> <img src="images/3d4.JPG" class="img-responsive post-image" alt="Blog"> </div>
-<br>
-<img src="images/3d3.JPG" class="img-responsive post-image" style="height: 500px; object-fit: contain;"alt="Blog">
 
 <h1> Week 6: Electronics design </h1>
 
@@ -220,6 +211,25 @@ Paula Del Rio and I soldered our board together in class (we forgot to take a pi
 	<p>Question: how complex of a system of connections can be created using a program like kikad? </p>
 	<p>Moment of!: it is vital to first understand the functionality of all the components in order to design a well-thought out PCB board.</p>
 	<p> Assignment: Design a PCB board also called breakout-board for your ESP32 HUZZAH 32 microcontrollers ( or other board that you want to use rapberri pi ,etc) that allows you to connect an input (sensor) or an output (actuator) to your commercial board without cables. Include the design files in your webpage and explain well the process on how you did it. </p>
+
+	<p>Before creating a new PCB, Pippa and I milled the PCB from the Domingo Club’s open-source incubator that we were building. It was helpful to do this as we could see how milling it worked and examining their schematics and the connections on the circuit. We milled the PCB and soldered all the pieces onto it only to realize.. That we had milled it on a double-sided PCB sheet which meant that the board was conductive everywhere, which is a problem. We learned from this mistake and re-milled it on a smaller, one sided one.</p>
+
+	<div class="col-lg-6"> <img src="images/wsix6.JPG" class="img-responsive post-image" alt="Blog"> </div>
+	<div class="col-lg-6"> <img src="images/wsix7.JPG" class="img-responsive post-image" alt="Blog"> </div>
+		&nbsp
+	<img src="images/wsix8.JPG" class="img-responsive post-image" style="height: 500px; object-fit: contain;"alt="Blog">
+
+	<p>For the next PCB, we needed to create one to control the elements of pumps, lights, and sensors for the photobioreactor. We wanted to measure light intensity to see if the PBR needs more light, temperature to see if the water drops too cold, and pumps to get air flow and circulation. In order to do this, first the electronics needed to be set up and protyped using a breadboard and wiring. Next, this was moved to a schematic on fritzing where you can drag and drop elements to see the connections more clearly. Fritzing has a function where it automatically lays out the connections onto a PCB, but it needed to be cleaned up.</p>
+
+	<img src="images/wsix.jpg" class="img-responsive post-image" style="height: 500px; object-fit: contain;"alt="Blog">
+	<img src="images/wsix2.jpg" class="img-responsive post-image" style="height: 500px; object-fit: contain;"alt="Blog">
+	<img src="images/wsix3.png" class="img-responsive post-image" style="height: 500px; object-fit: contain;"alt="Blog">
+
+<p>With Paula’s lead, this file was taken and turned into an image that can be processed for milling. The image was then placed into Maud’s project to begin milling, inverting the image and preparing G-code. Next, the correct end mill was chosen, 1/64 for traces and 1/32 for the holes.</p>
+
+<div class="col-lg-6"> <img src="images/wsix4.JPG" class="img-responsive post-image" alt="Blog"> </div>
+<div class="col-lg-6"> <img src="images/wsix5.jpg" class="img-responsive post-image" alt="Blog"> </div>
+	&nbsp
 
 	<h1> Week 7: CNC milling and CAM </h1>
 
@@ -256,6 +266,18 @@ Paula Del Rio and I soldered our board together in class (we forgot to take a pi
 		<p>Moment of !: In addition to thinking about the molding material, the casting material properties should be well understood in order to prevent mistakes.</p>
 		<br>
 		<p>Assignment: Make a mold (can be 1 or two sides) hard-soft-hard. 3D print- cast silicone- cast something inside. You can use biomaterials to substitute the silicone or the final cast. Experiment!</p>
+
+		<p>For this assignment, it made sense to make molds for components we needed for the photobioreactor. During this process of making the molds, I think the most challenging part was thinking in reverse- how the mold needed to be the inverse of the actual shape I wanted and how the negative space would look. With Paula, we created several simple molds. One was for the air pump, so that it could be encased by a soft material and not sit directly on the wood, making it quieter when it vibrates. We also modeled molds to encase the sensors. We ended up making two types of molds for the sensors, as we found out that the clear silicone would not be a strong enough material for the sensor and it broke up when we were taking it out. Therefore, we chose another mold style to use resin with. For the pump stabilizer, I poured silicone parts A and B in equal proportions, mixed, and poured into the mold. After waiting 3-4 days it was fully dried, and I peeled it away from the mold.</p>
+
+		<img src="images/mc2.JPG" class="img-responsive post-image" style="height: 500px; object-fit: contain;"alt="Blog">
+		<br>
+		<div class="col-lg-6"> <img src="images/mc3.JPG" class="img-responsive post-image" alt="Blog"> </div>
+		<div class="col-lg-6"> <img src="images/mc4.JPG" class="img-responsive post-image" alt="Blog"> </div>
+			&nbsp
+		<img src="images/mc.JPG" class="img-responsive post-image" style="height: 500px; object-fit: contain;"alt="Blog">
+
+
+
 
 </div>
 </div>
